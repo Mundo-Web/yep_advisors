@@ -87,13 +87,13 @@ function showInfoYep(title, first, second, pathImage, imageAlt) {
   /* imagenes  */
   const servicesAnimation = document.createElement("div");
   servicesAnimation.className =
-    "animate-fade-up animate-once animate-duration-1000";
+    "animate-fade-up animate-once animate-duration-1000 flex justify-end";
 
   const div_empty = document.createElement("div");
   div_empty.className = "md:basis-2/5";
 
   const div_fill = document.createElement("div");
-  div_fill.className = "md:basis-3/5 md:ml-40";
+  div_fill.className = "md:basis-3/5 md:ml-40 w-full";
 
   const image = document.createElement("img");
   image.src = pathImage;
@@ -146,6 +146,32 @@ function loadWeath() {
     flechaWeath.classList.add("block");
     flechaFinanzas.classList.add("hidden");
     flechaEstructura.classList.add("hidden");
+
+    finanzas.classList.remove("text-colorSubtitleLittle");
+    wealthLink.classList.add("text-colorSubtitleLittle");
+    estructuracion.classList.remove("text-colorSubtitleLittle");
+
+    wealthLink.classList.remove("font-regular", "text-regularSize");
+    wealthLink.classList.add(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    estructuracion.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    finanzas.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    estructuracion.classList.add("font-regular", "text-regularSize");
+    finanzas.classList.add("font-regular", "text-regularSize");
   }
 }
 
@@ -170,6 +196,27 @@ function loadFinanzas() {
     flechaFinanzas.classList.add("block");
     flechaWeath.classList.add("hidden");
     flechaEstructura.classList.add("hidden");
+
+    finanzas.classList.remove("font-regular", "text-regularSize");
+    finanzas.classList.add(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    wealthLink.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    estructuracion.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+    wealthLink.classList.add("font-regular", "text-regularSize");
+    estructuracion.classList.add("font-regular", "text-regularSize");
   }
 }
 
@@ -194,6 +241,27 @@ function loadEstructuracion() {
     flechaEstructura.classList.add("block");
     flechaWeath.classList.add("hidden");
     flechaFinanzas.classList.add("hidden");
+
+    estructuracion.classList.remove("font-regular", "text-regularSize");
+    estructuracion.classList.add(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    wealthLink.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+
+    finanzas.classList.remove(
+      "text-colorSubtitleLittle",
+      "font-semibold",
+      "text-littleTitle"
+    );
+    wealthLink.classList.add("font-regular", "text-regularSize");
+    finanzas.classList.add("font-regular", "text-regularSize");
   }
 }
 
