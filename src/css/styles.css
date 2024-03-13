@@ -1,0 +1,133 @@
+a,
+button {
+  cursor: pointer;
+}
+
+.menu-list {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  width: 300px;
+}
+
+.navigation {
+  position: fixed;
+  left: -100%;
+  width: 350px;
+  height: 100%;
+  background-color: #2d694b;
+  transition: 0.5s;
+}
+
+.navigation ul li {
+  color: #fff;
+  text-align: left;
+  text-transform: initial;
+  list-style-type: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  /* border-bottom: 1pt solid #252525; */
+}
+
+.bar {
+  position: fixed;
+}
+
+.hamburger {
+  margin-right: 30%;
+  display: block;
+  /* top: 5%;
+        left: 95%; */
+  width: 30px;
+  height: 15px;
+  transform: translateY(-50%);
+  border: 0;
+  background: 0 0;
+}
+
+#position {
+  margin-top: 10%;
+  margin-left: 85%;
+}
+
+.bar {
+  top: 3px;
+  background: white;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease-in;
+}
+
+#bar2 {
+  top: 11px;
+}
+
+#bar3 {
+  top: 19px;
+}
+
+.navigation.active {
+  left: 0;
+}
+
+.hamburger.open #bar1 {
+  background-color: #fff;
+  transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+  background-color: transparent;
+}
+
+.hamburger.open #bar3 {
+  background-color: #fff;
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
+.banner_section {
+  background-image: url("../img_donas/fondomovil2.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner_section2 {
+  background-image: url("../img_donas/bannerfondo2.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.js-example-tags-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tag-selected {
+  list-style: none;
+  background-color: #e4e4e4;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.destroy-tag-selected {
+  color: #999;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.select2-selection__choice {
+  display: none;
+}
