@@ -87,8 +87,8 @@ function showInfoYep(title, first, second, pathImage, imageAlt) {
   /* imagenes  */
   const servicesAnimation = document.createElement("div");
   servicesAnimation.className =
-    "animate-fade-up animate-once animate-duration-1000 flex justify-end";
-
+    "animate-fade-up animate-once animate-duration-1000 flex justify-end z-0";
+  // 90 js - 600 html - 137 html
   const div_empty = document.createElement("div");
   div_empty.className = "md:basis-2/5";
 
@@ -176,7 +176,7 @@ function loadWeath() {
 }
 
 function loadFinanzas() {
-  cleanHTML(); // Limpia el contenido antes de agregar nuevos elementos
+  cleanHTML();
 
   showInfoYep(
     "Potenciando tu Empresa hacia el Éxitos",
@@ -221,7 +221,7 @@ function loadFinanzas() {
 }
 
 function loadEstructuracion() {
-  cleanHTML(); // Limpia el contenido antes de agregar nuevos elementos
+  cleanHTML();
 
   showInfoYep(
     "Optimización Financiera Estratégica",
