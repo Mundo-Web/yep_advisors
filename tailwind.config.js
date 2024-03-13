@@ -30,6 +30,7 @@ module.exports = {
       textColor: {
         colorSubtitle: "#113E55",
         colorSubtitleLittle: "#173525",
+        colorAdd: "#2D694B",
       },
       borderColor: {
         selectCheck: "#173525",
@@ -37,6 +38,7 @@ module.exports = {
     },
     screens: {
       xs: "320px",
+      "2xs": "370px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
