@@ -686,8 +686,8 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-2{
@@ -710,8 +710,28 @@ video {
   margin-top: 24rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.mt-80{
+  margin-top: 20rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
+.mb-80{
+  margin-bottom: 20rem;
+}
+
+.mb-44{
+  margin-bottom: 11rem;
+}
+
+.mb-\[-32px\]{
+  margin-bottom: -32px;
+}
+
+.-mb-\[32px\]{
+  margin-bottom: -32px;
 }
 
 .block{
@@ -804,10 +824,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.max-w-full{
-  max-width: 100%;
 }
 
 .max-w-screen-lg{
@@ -922,8 +938,8 @@ video {
   gap: 1.25rem;
 }
 
-.scroll-auto{
-  scroll-behavior: auto;
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .truncate{
@@ -1358,14 +1374,34 @@ video {
   background-color: rgb(45 105 75 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-colorButton:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 53 37 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-300:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-colorSubtitleLittle:hover{
+  --tw-text-opacity: 1;
+  color: rgb(23 53 37 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:border-blue-500:focus{
@@ -1388,6 +1424,10 @@ video {
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
+.group:hover .group-hover\:stroke-green-900{
+  stroke: #14532d;
+}
+
 .group:hover .group-hover\:stroke-white{
   stroke: #fff;
 }
@@ -1407,16 +1447,20 @@ video {
     margin-bottom: 5rem;
   }
 
+  .sm\:mt-96{
+    margin-top: 24rem;
+  }
+
+  .sm\:mb-96{
+    margin-bottom: 24rem;
+  }
+
   .sm\:w-full{
     width: 100%;
   }
 }
 
 @media (min-width: 768px){
-  .md\:bottom-\[16rem\]{
-    bottom: 16rem;
-  }
-
   .md\:my-20{
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -1436,10 +1480,6 @@ video {
 
   .md\:mt-12{
     margin-top: 3rem;
-  }
-
-  .md\:mt-16{
-    margin-top: 4rem;
   }
 
   .md\:block{
@@ -1504,8 +1544,8 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:bottom-\[20rem\]{
-    bottom: 20rem;
+  .lg\:bottom-\[4rem\]{
+    bottom: 4rem;
   }
 
   .lg\:my-5{

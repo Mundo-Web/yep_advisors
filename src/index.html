@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-auto">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -112,7 +112,7 @@
           </p>
           <div class="flex justify-center pt-5">
             <a
-              class="flex justify-center items-center gap-2 rounded-xl border px-4 cursor-pointer"
+              class="flex justify-center items-center gap-2 rounded-xl border px-4 cursor-pointer hover:bg-colorBackground hover:text-white duration-300"
               href="#form"
             >
               <span class="py-3 font-inter font-semibold text-basicSize">
@@ -130,9 +130,7 @@
 
         <!-- WhatsApp-->
         <div class="flex justify-end w-11/12 mx-auto pb-60 mb-4 z-10">
-          <div
-            class="fixed bottom-6 sm:bottom-[2rem] md:bottom-[16rem] lg:bottom-[20rem] z-30"
-          >
+          <div class="fixed bottom-6 sm:bottom-[2rem] lg:bottom-[4rem] z-30">
             <a
               href="https://wa.me/numerooo?text=Hola%20desde%20mi%20sitio%20web"
               target="_blank"
@@ -149,11 +147,11 @@
     <!-- --------------------- -->
 
     <main
-      class="mt-12 md:-mt-40 xl:-mt-52 2xl:-mt-40 w-11/12 mx-auto"
+      class="mt-12 md:-mt-40 xl:-mt-52 2xl:-mt-40 w-full mx-auto"
       data-aos="fade-up"
     >
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-md bg-white rounded-2xl px-6 col-span-2 py-5 lg:py-0"
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 shadow-md bg-white rounded-2xl px-6 col-span-2 py-5 lg:py-0 w-11/12 mx-auto"
       >
         <section
           class="bg-white flex flex-col justify-center items-center text-center rounded-3xl lg:my-5 px-5 text-colorSubtitleLittle group hover:bg-colorBackground md:duration-300"
@@ -295,14 +293,15 @@
             transformando tus objetivos financieros en realidades concretas.
           </p>
         </section>
-      </div>
+      </section>
 
-      <!-- Corregir  --------------->
-      <div
-        class="grid grid-cols-1 gap-12 lg:grid-cols-2 w-full pt-10 lg:gap-44"
+      <!-- ACERCA DE NOSOTROS  --------------->
+      <section
+        class="grid grid-cols-1 gap-12 lg:grid-cols-2 w-11/12 pt-10 lg:gap-44 mx-auto"
         id="nosotros"
+        data-aos="fade-up"
       >
-        <div class="text-colorSubtitle" data-aos="fade-right">
+        <div class="text-colorSubtitle">
           <h2
             class="font-semibold text-subtitle font-inter pb-5 leading-none md:leading-snug"
           >
@@ -334,7 +333,7 @@
           </div>
         </div>
 
-        <div class="text-teal-900" data-aos="fade-left">
+        <div class="text-teal-900">
           <div class="w-full">
             <img
               src="./images/img/workplace-team-cooperation-businesswoman-laptop-office.png"
@@ -360,591 +359,609 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!--  -->
-    </main>
+      <!-- PARTNERSHIPS  -->
 
-    <div
-      class="bg-colorBackground py-5 my-10"
-      id="clientes"
-      data-aos="fade-up"
-      data-aos-duration="500"
-    >
-      <h2
-        class="font-inter font-semibold text-littleTitle text-center pb-10 md:pb-1 text-white"
+      <section
+        class="bg-colorBackground py-5 my-10"
+        id="clientes"
+        data-aos="fade-up"
+        data-aos-duration="500"
       >
-        Partnerships
-      </h2>
+        <h2
+          class="font-inter font-semibold text-littleTitle text-center pb-10 md:pb-1 text-white"
+        >
+          Partnerships
+        </h2>
 
-      <div
-        class="grid grid-cols-1 gap-5 md:gap-0 md:flex justify-around items-center max-w-screen-md mx-auto pb-5"
-      >
-        <div class="mx-auto">
-          <img src="./images/img/stonex.png" alt="tonex" />
+        <div
+          class="grid grid-cols-1 gap-5 md:gap-0 md:flex justify-around items-center max-w-screen-md mx-auto pb-5"
+        >
+          <div class="mx-auto">
+            <img src="./images/img/stonex.png" alt="tonex" />
+          </div>
+          <div class="mx-auto">
+            <img src="./images/img/fenix.png" alt="fenix" />
+          </div>
+          <div class="mx-auto">
+            <img src="./images/img/diviso.png" alt="diviso" />
+          </div>
         </div>
-        <div class="mx-auto">
-          <img src="./images/img/fenix.png" alt="fenix" />
-        </div>
-        <div class="mx-auto">
-          <img src="./images/img/diviso.png" alt="diviso" />
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="mb-96 pt-5">
-      <div class="grid grid-cols-1 md:flex justify-center mx-auto w-11/12">
-        <div class="basis-1/2 mb-10">
-          <h2
-            class="font-inter font-semibold text-subtitle text-colorSubtitleLittle max-w-xl leading-tight"
-          >
-            Resultados que hablan por Sí Mismos
-          </h2>
-          <a
-            class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorBackground w-48 mt-5 cursor-pointer"
-            href="#form"
-          >
-            <span
-              class="py-3 font-semibold font-inter text-base text-white text-basicSize"
+      <!-- RESULTADOS QUE HABLAS POR SI MISMOS -->
+      <section class="-mb-[32px] sm:mb-96 pt-5 w-11/12 mx-auto">
+        <div class="grid grid-cols-1 md:flex justify-center mx-auto w-full">
+          <div class="basis-1/2 mb-10">
+            <h2
+              class="font-inter font-semibold text-subtitle text-colorSubtitleLittle max-w-xl leading-tight"
             >
-              Quiero Invertir
-            </span>
-            <img
-              src="./images/img/trend-up-01.png"
-              alt="flecha"
-              class="w-6 h-6"
-            />
-          </a>
-        </div>
+              Resultados que hablan por Sí Mismos
+            </h2>
+            <a
+              class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorBackground w-48 mt-5 cursor-pointer hover:bg-colorButton duration-300 hover:text-white"
+              href="#form"
+            >
+              <span
+                class="py-3 font-semibold font-inter text-base text-white text-basicSize"
+              >
+                Quiero Invertir
+              </span>
+              <img
+                src="./images/img/trend-up-01.png"
+                alt="flecha"
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
 
-        <div class="basis-1/2 flex flex-col justify-center">
-          <p
-            class="text-colorSubtitleLittle font-inter font-regular text-regularSize"
-          >
-            Yep Advisors ofrece resultados tangibles respaldados por
-            estadísticas impresionantes, superado consistentemente las
-            expectativas y generando un crecimiento significativo para nuestros
-            clientes.
-          </p>
+          <div class="basis-1/2 flex flex-col justify-center">
+            <p
+              class="text-colorSubtitleLittle font-inter font-regular text-regularSize"
+            >
+              Yep Advisors ofrece resultados tangibles respaldados por
+              estadísticas impresionantes, superado consistentemente las
+              expectativas y generando un crecimiento significativo para
+              nuestros clientes.
+            </p>
 
-          <div
-            class="grid grid-cols-1 md:flex justify-between items-center pt-10 gap-10 lg:gap-0 md:pt-5"
-          >
             <div
-              class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto"
-              data-aos="flip-right"
+              class="grid grid-cols-1 md:flex justify-between items-center pt-10 gap-10 lg:gap-0 md:pt-5"
             >
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                150 <span class="text-colorAdd">+</span>
-              </p>
-              <div>
-                <p class="text-colorSubtitleLittle">Socios</p>
-                <p class="text-colorSubtitleLittle">Inversionistas</p>
+              <div
+                class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto"
+                data-aos="flip-up"
+              >
+                <p class="text-6xl font-semibold text-colorSubtitleLittle">
+                  150 <span class="text-colorAdd">+</span>
+                </p>
+                <div>
+                  <p class="text-colorSubtitleLittle">Socios</p>
+                  <p class="text-colorSubtitleLittle">Inversionistas</p>
+                </div>
               </div>
-            </div>
 
-            <div
-              class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto"
-              data-aos="flip-right"
-            >
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                100 <span class="text-colorAdd">+</span>
-              </p>
-              <div class="">
+              <div
+                class="flex gap-5 flex-col font-inter font-regular text-regularSize mx-auto"
+                data-aos="flip-up"
+              >
+                <p class="text-6xl font-semibold text-colorSubtitleLittle">
+                  100 <span class="text-colorAdd">+</span>
+                </p>
+                <div class="">
+                  <p
+                    class="text-colorSubtitleLittle font-inter font-regular text-regularSize"
+                  >
+                    Volumen
+                  </p>
+                  <p
+                    class="text-colorSubtitleLittle"
+                    font-inter
+                    font-regular
+                    text-regularSize
+                  >
+                    Negociado
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-5 flex-col font-inter font-regular text-regularSize text-colorSubtitleLittle mx-auto"
+                data-aos="flip-up"
+              >
+                <p class="text-6xl font-semibold text-colorSubtitleLittle">
+                  49K <span class="text-colorAdd">+</span>
+                </p>
                 <p
                   class="text-colorSubtitleLittle font-inter font-regular text-regularSize"
                 >
-                  Volumen
+                  Estrategias <span class="block">de Inversión</span>
                 </p>
+                <!--  <p class="font-normal text-lg">Inversionistas</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------ VIAJE FINANCIERO --------------------------------------- -->
+      <section class="bg-colorBackground pb-10 mt-96">
+        <div class="w-11/12 mx-auto flex justify-center mb-10">
+          <div class="w-full">
+            <img
+              src="./images/img/stock-market-or-forex-trading-graph-in-graphic-concept-vector.png"
+              alt="forex-trading"
+              class="w-full -mt-72 xl:-mt-80"
+              data-aos="fade-up"
+            />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-20 lg:flex w-11/12 mx-auto lg:gap-32 text-white pb-10"
+          id="nuestros_servicios"
+          data-aos="fade-up"
+        >
+          <div class="basis-2/5 flex flex-col gap-5">
+            <div class="flex flex-col gap-4">
+              <p class="font-inter font-semibold text-regularSize">Servicios</p>
+              <h2
+                class="font-inter font-semibold text-middleTitle leading-none md:leading-tight"
+              >
+                Tu Viaje Financiero Comienza Aquí
+              </h2>
+              <p class="font-inter font-regular text-basicSize">
+                Yep Advisors: Expertos en Wealth Management, Finanzas
+                Corporativas y Estructura Financiera. Tu socio confiable hacia
+                el éxito financiero.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <a
+                  class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle"
+                  id="wealth"
+                  >Wealth Management
+                </a>
                 <p
-                  class="text-colorSubtitleLittle"
-                  font-inter
-                  font-regular
-                  text-regularSize
+                  class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-weath"
                 >
-                  Negociado
+                  >
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  class="font-inter font-regular text-regularSize"
+                  id="finanzas"
+                  >Finanzas Corporativas
+                </a>
+
+                <p
+                  class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-finanzas"
+                >
+                  >
+                </p>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <a
+                  class="font-inter font-regular text-regularSize"
+                  id="estructuracion"
+                  >Estructuración Financiera
+                </a>
+
+                <p
+                  class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-estructura"
+                >
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+
+          <div class="basis-3/5 lg:mt-0 services">
+            <div class="animate-fade-up animate-once animate-duration-1000">
+              <h2
+                class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
+              >
+                Gestión Patrimonial Personalizada
+              </h2>
+              <div class="flex flex-col gap-5">
+                <p class="font-regular font-inter text-regularSize">
+                  Yep Advisors, entendemos que cada individuo tiene objetivos
+                  financieros únicos. Nuestro servicio de Wealth Management
+                  ofrece soluciones personalizadas diseñadas para proteger y
+                  hacer tu patrimonio.
+                </p>
+
+                <p class="font-regular font-inter text-regularSize">
+                  Desde la planificación de la jubilación hasta la gestión de
+                  inversiones, nuestro enfoque centrado en el cliente garantiza
+                  que tus necesidades estén siempre en el centro de nuestras
+                  decisiones. Confía en nosotros para ayudarte a alcanzar tus
+                  metas financieras con confianza y tranquilidad.
+                </p>
+              </div>
+
+              <a
+                class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer hover:bg-white hover:text-colorSubtitleLittle duration-300 group"
+                href="#form"
+              >
+                <span
+                  class="py-3 font-semibold font-inter text-basicSize border-lg"
+                >
+                  Quiero Invertir
+                </span>
+                <div>
+                  <svg
+                    width="22"
+                    height="12"
+                    viewBox="0 0 22 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.3999 10.8002L6.7759 5.63096L11.3839 10.0617L20.5999 1.2002M20.5999 1.2002H13.6879M20.5999 1.2002V7.84635"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="group-hover:stroke-green-900"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="basis-3/5 lg:mt-0 services hidden">
+            <div class="animate-fade-up animate-once animate-duration-1000">
+              <h2
+                class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
+              >
+                Potenciando tu Empresa hacia el Éxito
+              </h2>
+              <div class="flex flex-col gap-5">
+                <p class="font-regular font-inter text-regularSize">
+                  En el mundo empresarial, el éxito depende en gran medida de la
+                  capacidad para tomar decisiones financieras estratégicas. Con
+                  Yep Advisors, tienes un socio confiable que te brinda el
+                  conocimiento y la experiencia necesarios para impulsar el
+                  crecimiento y la rentabilidad de tu empresa.
+                </p>
+
+                <p class="font-regular font-inter text-regularSize">
+                  Desde la evaluación de inversiones hasta la reestructuración
+                  financiera, nuestro equipo de expertos está aquí para ayudarte
+                  a navegar por los desafíos financieros y alcanzar tus
+                  objetivos empresariales.
+                </p>
+              </div>
+
+              <a
+                class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer"
+                href="#form"
+              >
+                <span
+                  class="py-3 font-semibold font-inter text-basicSize text-white border-lg"
+                >
+                  Quiero Invertir
+                </span>
+                <img
+                  src="./images/img/trend-up-01.png"
+                  alt="flecha"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="basis-3/5 lg:mt-0 services hidden">
+            <div class="animate-fade-up animate-once animate-duration-1000">
+              <h2
+                class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
+              >
+                Optimización Financiera Estratégica
+              </h2>
+              <div class="flex flex-col gap-5">
+                <p class="font-regular font-inter text-regularSize">
+                  Una estructura financiera sólida es la base de cualquier
+                  estrategia empresarial exitosa. En Yep Advisors, te ofrecemos
+                  soluciones estratégicas que te permiten optimizar tu
+                  estructura financiera para maximizar el rendimietno y
+                  minimizar los riesgos.
+                </p>
+
+                <p class="font-regular font-inter text-regularSize">
+                  Desde la gestión de deudas hasta la planificación fiscal,
+                  nuestro enfoque personalizado te proporciona las herramientas
+                  necesarias para tomar decisiones informadas y ancanzar tus
+                  metas financieras a largo plazo con confianza.
+                </p>
+              </div>
+
+              <a
+                class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer"
+                href="#form"
+              >
+                <span
+                  class="py-3 font-semibold font-inter text-basicSize text-white border-lg"
+                >
+                  Quiero Invertir
+                </span>
+                <img
+                  src="./images/img/trend-up-01.png"
+                  alt="flecha"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="images-servicios">
+          <div
+            class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
+          >
+            <div class="md:basis-2/5"></div>
+            <div class="md:basis-3/5 md:ml-40 w-full">
+              <img
+                src="./images/img/patrimonio_testimonial.png"
+                alt="patrimonio testimonial"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="images-servicios hidden">
+          <div
+            class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
+          >
+            <div class="md:basis-2/5"></div>
+            <div class="md:basis-3/5 md:ml-40 w-full">
+              <img
+                src="./images/img/finanzas_testimonial_imagen.png"
+                alt="finanzas"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="images-servicios hidden">
+          <div
+            class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
+          >
+            <div class="md:basis-2/5"></div>
+            <div class="md:basis-3/5 md:ml-40 w-full">
+              <img
+                src="./images/img/estructuracion_imagen.png"
+                alt="estructurar"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- ----- FORMULARIO----  -->
+      </section>
+
+      <section
+        class="grid grid-cols-1 md:flex justify-between gap-12 lg:gap-32 w-11/12 mx-auto py-16 lg:pb-0"
+        id="form"
+      >
+        <div
+          class="text-colorSubtitleLittle max-w-xl mx-auto"
+          data-aos="fade-up"
+        >
+          <h2 class="font-semibold font-inter text-subtitle leading-tight">
+            ¡Nos encantaría escuchar de ti!
+          </h2>
+          <p class="font-regular font-inter text-regularSize pt-2 mb-10">
+            Completa el formulario a continuación y nos pondremos en contacto
+            contigo lo antes posible para discutir cómo podemos ayudarte a
+            alcanzar tus obketivos financieros.
+          </p>
+
+          <form action="#">
+            <div class="h-14">
+              <input
+                type="text"
+                placeholder="Nombre completo"
+                class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
+              />
+            </div>
+
+            <div class="h-14">
+              <input
+                type="tel"
+                placeholder="Teléfono"
+                class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
+              />
+            </div>
+
+            <div class="h-14">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
+              />
+            </div>
+
+            <div class="h-14 border-b border-gray-300">
+              <select
+                name="servicios"
+                id="servicios"
+                aria-label="Tipo de Servicio"
+                class="w-full h-full px-4 border-none outline-none font-regular text-basicSize font-inter"
+              >
+                <option value="" class="">Tipo de Servicio</option>
+                <option value="1" class="">Wealth Management</option>
+                <option value="2" class="">Finanzas Corporativas</option>
+                <option value="3" class="">Estructuración Financiera</option>
+              </select>
+            </div>
+
+            <div class="h-14 border-b border-gray-300">
+              <select
+                name="meet"
+                id="meet"
+                aria-label="meet"
+                class="w-full h-full px-4 border-none outline-none font-regular text-basicSize font-inter"
+              >
+                <option value="" class="">¿Cómo nos conociste?</option>
+                <option value="1" class="">
+                  Recomendación de un amigo/familiar
+                </option>
+                <option value="2" class="">
+                  Búsqueda en línea (Google, Bing, etc)
+                </option>
+                <option value="3" class="">
+                  Redes sociales (Facebook, Linkedin, Twitter, etc)
+                </option>
+                <option value="4" class="">
+                  Redes sociales (Evento o conferencia)
+                </option>
+                <option value="5" class="">
+                  Otro (Por favor, especificar)
+                </option>
+              </select>
+            </div>
+
+            <div
+              class="flex justify-center items-center gap-2 rounded-xl border px-4 bg-colorBackground mt-10 w-full cursor-pointer hover:bg-colorButton duration-300"
+            >
+              <input
+                type="submit"
+                class="py-3 font-semibold text-base text-white cursor-pointer"
+                value="Enviar Solicitud"
+              />
+              <img
+                src="./images/img/trend-up-01.png"
+                alt="flecha"
+                class="w-6 h-6"
+              />
+            </div>
+
+            <p
+              class="font-regular text-basicSize font-inter pt-10 text-colorSubtitleLittle"
+            >
+              ¿Prefieres que nos comuniquemos por Teléfono o Correo Electrónico?
+            </p>
+            <div class="flex gap-5 my-2">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="whatsapp"
+                  name="miCheckbox"
+                  class="w-5 h-5 border border-gray-400 rounded mr-2 flex-shrink-0"
+                />
+                <label
+                  for="whatsapp"
+                  class="font-medium text-basicSize font-inter text-colorSubtitleLittle"
+                  >Whatsapp</label
+                >
+              </div>
+
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="correo"
+                  name="miCheckbox"
+                  class="w-5 h-5 border border-gray-400 rounded mr-2 flex-shrink-0"
+                />
+                <label
+                  for="correo"
+                  class="font-medium text-basicSize font-inter text-colorSubtitleLittle"
+                  >Correo Electrónico</label
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div data-aos="fade-up">
+          <h2
+            class="font-semibold text-middle font-inter text-colorSubtitleLittle pt-2"
+          >
+            Datos de contacto
+          </h2>
+          <p
+            class="font-regular text-regularSize font-inter text-colorSubtitleLittle py-4"
+          >
+            ¡Estamos aquí para ayudarte! Comunícate con nosotros para iniciar tu
+            viaje hacia el éxito financiero.
+          </p>
+
+          <div class="flex flex-col gap-5 text-colorSubtitleLittle">
+            <div class="flex gap-2">
+              <img
+                src="./images/svg/direccion.svg"
+                alt="direccion"
+                class="h-7 w-7 pt-2"
+              />
+              <div>
+                <p class="font-medium text-regularSize font-inter">Dirección</p>
+                <p class="font-regular text-basic font-inter">
+                  Av. Javier Prado Este 3060, Oficina A2, San Borja, Lima
                 </p>
               </div>
             </div>
 
-            <div
-              class="flex gap-5 flex-col font-inter font-regular text-regularSize text-colorSubtitleLittle mx-auto"
-              data-aos="flip-right"
-            >
-              <p class="text-6xl font-semibold text-colorSubtitleLittle">
-                49K <span class="text-colorAdd">+</span>
-              </p>
-              <p
-                class="text-colorSubtitleLittle font-inter font-regular text-regularSize"
-              >
-                Estrategias <span class="block">de Inversión</span>
-              </p>
-              <!--  <p class="font-normal text-lg">Inversionistas</p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- traiding --------------------------------------------------------------->
-
-    <div class="bg-colorBackground pb-10 mt-96">
-      <div class="w-11/12 mx-auto flex justify-center mb-10">
-        <div class="w-full">
-          <!-- <div class="max-w-full">  -->
-          <img
-            src="./images/img/stock-market-or-forex-trading-graph-in-graphic-concept-vector.png"
-            alt="forex-trading"
-            class="w-full -mt-72 xl:-mt-80"
-          />
-          <!-- class="w-full -mt-72" -->
-        </div>
-      </div>
-      <div
-        class="grid grid-cols-1 gap-20 lg:flex w-11/12 mx-auto lg:gap-32 text-white pb-10"
-        id="nuestros_servicios"
-      >
-        <div class="basis-2/5 flex flex-col gap-5" data-aos="fade-right">
-          <div class="flex flex-col gap-4">
-            <p class="font-inter font-semibold text-regularSize">Servicios</p>
-            <h2
-              class="font-inter font-semibold text-middleTitle leading-none md:leading-tight"
-            >
-              Tu Viaje Financiero Comienza Aquí
-            </h2>
-            <p class="font-inter font-regular text-basicSize">
-              Yep Advisors: Expertos en Wealth Management, Finanzas Corporativas
-              y Estructura Financiera. Tu socio confiable hacia el éxito
-              financiero.
-            </p>
-          </div>
-
-          <div class="flex flex-col gap-5">
-            <div class="flex justify-between items-center">
-              <a
-                class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle"
-                id="wealth"
-                >Wealth Management
-              </a>
-              <p
-                class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-weath"
-              >
-                >
-              </p>
-            </div>
-
-            <div class="flex justify-between items-center">
-              <a class="font-inter font-regular text-regularSize" id="finanzas"
-                >Finanzas Corporativas
-              </a>
-
-              <p
-                class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-finanzas"
-              >
-                >
-              </p>
-            </div>
-
-            <div class="flex justify-between items-center">
-              <a
-                class="font-inter font-regular text-regularSize"
-                id="estructuracion"
-                >Estructuración Financiera
-              </a>
-
-              <p
-                class="text-colorSubtitleLittle font-inter font-semibold text-littleTitle flecha-estructura"
-              >
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- agregar hijossssssssssss -->
-
-        <div class="basis-3/5 lg:mt-0 services" data-aos="fade-up">
-          <div class="animate-fade-up animate-once animate-duration-1000">
-            <h2
-              class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
-            >
-              Gestión Patrimonial Personalizada
-            </h2>
-            <div class="flex flex-col gap-5">
-              <p class="font-regular font-inter text-regularSize">
-                Yep Advisors, entendemos que cada individuo tiene objetivos
-                financieros únicos. Nuestro servicio de Wealth Management ofrece
-                soluciones personalizadas diseñadas para proteger y hacer tu
-                patrimonio.
-              </p>
-
-              <p class="font-regular font-inter text-regularSize">
-                Desde la planificación de la jubilación hasta la gestión de
-                inversiones, nuestro enfoque centrado en el cliente garantiza
-                que tus necesidades estén siempre en el centro de nuestras
-                decisiones. Confía en nosotros para ayudarte a alcanzar tus
-                metas financieras con confianza y tranquilidad.
-              </p>
-            </div>
-
-            <a
-              class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer"
-              href="#form"
-            >
-              <span
-                class="py-3 font-semibold font-inter text-basicSize text-white border-lg"
-              >
-                Quiero Invertir
-              </span>
+            <div class="flex gap-2">
               <img
-                src="./images/img/trend-up-01.png"
-                alt="flecha"
-                class="w-6 h-6"
+                src="./images/svg/numero.svg"
+                alt="direccion"
+                class="h-7 w-7 pt-2"
               />
-            </a>
-          </div>
-        </div>
-
-        <div class="basis-3/5 lg:mt-0 services hidden">
-          <div class="animate-fade-up animate-once animate-duration-1000">
-            <h2
-              class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
-            >
-              Potenciando tu Empresa hacia el Éxito
-            </h2>
-            <div class="flex flex-col gap-5">
-              <p class="font-regular font-inter text-regularSize">
-                En el mundo empresarial, el éxito depende en gran medida de la
-                capacidad para tomar decisiones financieras estratégicas. Con
-                Yep Advisors, tienes un socio confiable que te brinda el
-                conocimiento y la experiencia necesarios para impulsar el
-                crecimiento y la rentabilidad de tu empresa.
-              </p>
-
-              <p class="font-regular font-inter text-regularSize">
-                Desde la evaluación de inversiones hasta la reestructuración
-                financiera, nuestro equipo de expertos está aquí para ayudarte a
-                navegar por los desafíos financieros y alcanzar tus objetivos
-                empresariales.
-              </p>
+              <div>
+                <p class="font-medium text-regularSize font-inter">
+                  Número de Teléfono
+                </p>
+                <p class="font-regular basicSize font-inter">+51 979 715 739</p>
+              </div>
             </div>
 
-            <a
-              class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer"
-              href="#form"
-            >
-              <span
-                class="py-3 font-semibold font-inter text-basicSize text-white border-lg"
-              >
-                Quiero Invertir
-              </span>
+            <div class="flex gap-2">
               <img
-                src="./images/img/trend-up-01.png"
-                alt="flecha"
-                class="w-6 h-6"
+                src="./images/svg/email.svg"
+                alt="direccion"
+                class="h-7 w-7 pt-2"
               />
-            </a>
-          </div>
-        </div>
-
-        <div class="basis-3/5 lg:mt-0 services hidden">
-          <div class="animate-fade-up animate-once animate-duration-1000">
-            <h2
-              class="font-semibold font-inter text-subtitle pb-5 leading-none md:leading-tight"
-            >
-              Optimización Financiera Estratégica
-            </h2>
-            <div class="flex flex-col gap-5">
-              <p class="font-regular font-inter text-regularSize">
-                Una estructura financiera sólida es la base de cualquier
-                estrategia empresarial exitosa. En Yep Advisors, te ofrecemos
-                soluciones estratégicas que te permiten optimizar tu estructura
-                financiera para maximizar el rendimietno y minimizar los
-                riesgos.
-              </p>
-
-              <p class="font-regular font-inter text-regularSize">
-                Desde la gestión de deudas hasta la planificación fiscal,
-                nuestro enfoque personalizado te proporciona las herramientas
-                necesarias para tomar decisiones informadas y ancanzar tus metas
-                financieras a largo plazo con confianza.
-              </p>
+              <div>
+                <p class="font-medium text-regularSize font-inter">
+                  Correo Electrónico
+                </p>
+                <p class="font-regular basicSize font-inter">
+                  info@yepavidsors.com
+                </p>
+              </div>
             </div>
 
-            <a
-              class="flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer"
-              href="#form"
-            >
-              <span
-                class="py-3 font-semibold font-inter text-basicSize text-white border-lg"
-              >
-                Quiero Invertir
-              </span>
+            <div class="flex gap-2">
               <img
-                src="./images/img/trend-up-01.png"
-                alt="flecha"
-                class="w-6 h-6"
+                src="./images/svg/atencion.svg"
+                alt="direccion"
+                class="h-7 w-7 pt-2"
               />
-            </a>
-          </div>
-        </div>
-        <!-- -----------agregar hijossssssssssss--------------- -->
-      </div>
-      <!-- Corregir  -->
-      <div class="images-servicios" data-aos="fade-right">
-        <div
-          class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
-        >
-          <div class="md:basis-2/5"></div>
-          <div class="md:basis-3/5 md:ml-40 w-full">
-            <img
-              src="./images/img/patrimonio_testimonial.png"
-              alt="patrimonio testimonial"
-              class="w-full"
-              data-aos="fade-right"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="images-servicios hidden">
-        <div
-          class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
-        >
-          <div class="md:basis-2/5"></div>
-          <div class="md:basis-3/5 md:ml-40 w-full">
-            <img
-              src="./images/img/finanzas_testimonial_imagen.png"
-              alt="finanzas"
-              class="w-full"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="images-servicios hidden">
-        <div
-          class="animate-fade-up animate-once animate-duration-1000 flex justify-end z-0"
-        >
-          <div class="md:basis-2/5"></div>
-          <div class="md:basis-3/5 md:ml-40 w-full">
-            <img
-              src="./images/img/estructuracion_imagen.png"
-              alt="estructurar"
-              class="w-full"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- ---------  -->
-    </div>
-    <!--  -->
-
-    <div
-      class="grid grid-cols-1 md:flex justify-between gap-12 lg:gap-32 w-11/12 mx-auto py-16 lg:pb-0"
-      id="form"
-    >
-      <div class="text-colorSubtitleLittle max-w-xl mx-auto" data-aos="zoom-in">
-        <h2 class="font-semibold font-inter text-subtitle leading-tight">
-          ¡Nos encantaría escuchar de ti!
-        </h2>
-        <p class="font-regular font-inter text-regularSize pt-2 mb-10">
-          Completa el formulario a continuación y nos pondremos en contacto
-          contigo lo antes posible para discutir cómo podemos ayudarte a
-          alcanzar tus obketivos financieros.
-        </p>
-
-        <form action="#">
-          <div class="h-14">
-            <input
-              type="text"
-              placeholder="Nombre completo"
-              class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
-            />
-          </div>
-
-          <div class="h-14">
-            <input
-              type="tel"
-              placeholder="Teléfono"
-              class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
-            />
-          </div>
-
-          <div class="h-14">
-            <input
-              type="email"
-              placeholder="E-mail"
-              class="border-b placeholder:font-regular placeholder:font-basicSize placeholder:font-inter focus:border-selectCheck focus:outline-none w-full h-full px-5"
-            />
-          </div>
-
-          <div class="h-14 border-b border-gray-300">
-            <select
-              name="servicios"
-              id="servicios"
-              aria-label="Tipo de Servicio"
-              class="w-full h-full px-4 border-none outline-none font-regular text-basicSize font-inter"
-            >
-              <option value="" class="">Tipo de Servicio</option>
-              <option value="1" class="">Wealth Management</option>
-              <option value="2" class="">Finanzas Corporativas</option>
-              <option value="3" class="">Estructuración Financiera</option>
-            </select>
-          </div>
-
-          <div class="h-14 border-b border-gray-300">
-            <select
-              name="meet"
-              id="meet"
-              aria-label="meet"
-              class="w-full h-full px-4 border-none outline-none font-regular text-basicSize font-inter"
-            >
-              <option value="" class="">¿Cómo nos conociste?</option>
-              <option value="1" class="">
-                Recomendación de un amigo/familiar
-              </option>
-              <option value="2" class="">
-                Búsqueda en línea (Google, Bing, etc)
-              </option>
-              <option value="3" class="">
-                Redes sociales (Facebook, Linkedin, Twitter, etc)
-              </option>
-              <option value="4" class="">
-                Redes sociales (Evento o conferencia)
-              </option>
-              <option value="5" class="">Otro (Por favor, especificar)</option>
-            </select>
-          </div>
-
-          <div
-            class="flex justify-center items-center gap-2 rounded-xl border px-4 bg-colorBackground mt-10 w-full cursor-pointer"
-          >
-            <input
-              type="submit"
-              class="py-3 font-semibold text-base text-white cursor-pointer"
-              value="Enviar Solicitud"
-            />
-            <img
-              src="./images/img/trend-up-01.png"
-              alt="flecha"
-              class="w-6 h-6"
-            />
-          </div>
-
-          <p
-            class="font-regular text-basicSize font-inter pt-10 text-colorSubtitleLittle"
-          >
-            ¿Prefieres que nos comuniquemos por Teléfono o Correo Electrónico?
-          </p>
-          <div class="flex gap-5 my-2">
-            <div class="flex items-center">
-              <input
-                type="checkbox"
-                id="whatsapp"
-                name="miCheckbox"
-                class="w-5 h-5 border border-gray-400 rounded mr-2 flex-shrink-0"
-              />
-              <label
-                for="whatsapp"
-                class="font-medium text-basicSize font-inter text-colorSubtitleLittle"
-                >Whatsapp</label
-              >
-            </div>
-
-            <div class="flex items-center">
-              <input
-                type="checkbox"
-                id="correo"
-                name="miCheckbox"
-                class="w-5 h-5 border border-gray-400 rounded mr-2 flex-shrink-0"
-              />
-              <label
-                for="correo"
-                class="font-medium text-basicSize font-inter text-colorSubtitleLittle"
-                >Correo Electrónico</label
-              >
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div data-aos="zoom-in">
-        <h2
-          class="font-semibold text-middle font-inter text-colorSubtitleLittle pt-2"
-        >
-          Datos de contacto
-        </h2>
-        <p
-          class="font-regular text-regularSize font-inter text-colorSubtitleLittle py-4"
-        >
-          ¡Estamos aquí para ayudarte! Comunícate con nosotros para iniciar tu
-          viaje hacia el éxito financiero.
-        </p>
-
-        <div class="flex flex-col gap-5 text-colorSubtitleLittle">
-          <div class="flex gap-2">
-            <img
-              src="./images/svg/direccion.svg"
-              alt="direccion"
-              class="h-7 w-7 pt-2"
-            />
-            <div>
-              <p class="font-medium text-regularSize font-inter">Dirección</p>
-              <p class="font-regular text-basic font-inter">
-                Av. Javier Prado Este 3060, Oficina A2, San Borja, Lima
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-2">
-            <img
-              src="./images/svg/numero.svg"
-              alt="direccion"
-              class="h-7 w-7 pt-2"
-            />
-            <div>
-              <p class="font-medium text-regularSize font-inter">
-                Número de Teléfono
-              </p>
-              <p class="font-regular basicSize font-inter">+51 979 715 739</p>
-            </div>
-          </div>
-
-          <div class="flex gap-2">
-            <img
-              src="./images/svg/email.svg"
-              alt="direccion"
-              class="h-7 w-7 pt-2"
-            />
-            <div>
-              <p class="font-medium text-regularSize font-inter">
-                Correo Electrónico
-              </p>
-              <p class="font-regular basicSize font-inter">
-                info@yepavidsors.com
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-2">
-            <img
-              src="./images/svg/atencion.svg"
-              alt="direccion"
-              class="h-7 w-7 pt-2"
-            />
-            <div>
-              <p class="font-medium text-regularSize font-inter">
-                Horario de Atención
-              </p>
-              <p class="font-regular basicSize font-inter">
-                Lunes a Viernes: 8:30 AM - 5:00 PM
-              </p>
+              <div>
+                <p class="font-medium text-regularSize font-inter">
+                  Horario de Atención
+                </p>
+                <p class="font-regular basicSize font-inter">
+                  Lunes a Viernes: 8:30 AM - 5:00 PM
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
+    <!-- ---------------------FOOTER --------------------------->
     <footer class="bg-colorFooter mt-6 md:mt-12 py-10" data-aos="fade-up">
       <div class="w-11/12 mx-auto relative">
         <div
@@ -1001,7 +1018,9 @@
             <a href="#nosotros" class="font-inter font-regular text-basic"
               >Nosotros</a
             >
-            <a href="#" class="font-inter font-regular text-basic">Contacto</a>
+            <a href="#form" class="font-inter font-regular text-basic"
+              >Contacto</a
+            >
           </div>
 
           <div class="flex flex-col gap-5">
