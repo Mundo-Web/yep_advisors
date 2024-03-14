@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "node_modules/preline/dist/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -26,6 +26,7 @@ module.exports = {
         colorButton: "#173525",
         colorBackground: "#2D694B",
         colorFooter: "#173525",
+        colorCombo: "#F9FCFB",
       },
       textColor: {
         colorSubtitle: "#113E55",
@@ -46,5 +47,5 @@ module.exports = {
       "2xl": "1536px",
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [require("tailwindcss-animated"), require("preline/plugin")],
 };
