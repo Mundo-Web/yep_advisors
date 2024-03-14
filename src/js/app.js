@@ -1,13 +1,27 @@
-const wealthLink = document.getElementById("wealth");
+const wealth = document.getElementById("wealth");
 const finanzas = document.getElementById("finanzas");
 const estructuracion = document.getElementById("estructuracion");
-const services = document.querySelector(".services");
-const img_patrimonial = document.querySelector(".img_patrimonial");
-const animation_servicios = document.querySelector(".animation_servicios");
-const image_animation = document.querySelector(".image_animation");
+const services = document.querySelectorAll(".services");
+const imagesServicios = document.querySelectorAll(".images-servicios");
+/*  */
+
 const flechaWeath = document.querySelector(".flecha-weath");
 const flechaFinanzas = document.querySelector(".flecha-finanzas");
 const flechaEstructura = document.querySelector(".flecha-estructura");
+
+// Clases a agregar y quitar
+const addClasses = [
+  "text-colorSubtitleLittle",
+  "font-semibold",
+  "text-littleTitle",
+];
+const removeClasses = [
+  "font-regular",
+  "text-regularSize",
+  "text-colorSubtitleLittle",
+  "font-semibold",
+  "text-littleTitle",
+];
 
 document.addEventListener("DOMContentLoaded", () => {
   flechaFinanzas.classList.add("hidden");
@@ -17,255 +31,80 @@ document.addEventListener("DOMContentLoaded", () => {
 loadEventListeners();
 
 function loadEventListeners() {
-  wealthLink.addEventListener("click", loadWeath);
-  finanzas.addEventListener("click", loadFinanzas);
-  estructuracion.addEventListener("click", loadEstructuracion);
+  wealth.addEventListener("click", showWealthManagement);
+  finanzas.addEventListener("click", showFinanzas);
+  estructuracion.addEventListener("click", showEstructuras);
 }
 
-function showInfoYep(title, first, second, pathImage, imageAlt) {
-  const animation = document.createElement("div");
-  animation.className = "animate-fade-up animate-once animate-duration-1000";
+function showFinanzas() {
+  console.log("finanzas");
 
-  const h2_weathHtml = document.createElement("p");
-  h2_weathHtml.classList.add(
-    "font-semibold",
-    "font-inter",
-    "text-subtitle",
-    "pb-5",
-    "leading-none",
-    "md:leading-tight"
-  );
-  h2_weathHtml.textContent = title;
+  services[0].classList.add("hidden");
+  services[1].classList.remove("hidden");
+  services[2].classList.add("hidden");
 
-  /* ---- */
+  imagesServicios[0].classList.add("hidden");
+  imagesServicios[1].classList.remove("hidden");
+  imagesServicios[2].classList.add("hidden");
 
-  const div_weath_info = document.createElement("div");
-  div_weath_info.classList.add("flex", "flex-col", "gap-5");
+  flechaWeath.classList.add("hidden");
+  flechaFinanzas.classList.remove("hidden");
+  flechaEstructura.classList.add("hidden");
 
-  const firstParagraph = document.createElement("p");
-  firstParagraph.classList.add(
-    "font-regular",
-    "font-inter",
-    "text-regularSize"
-  );
-  firstParagraph.textContent = first;
-
-  const secondParagraph = document.createElement("p");
-  secondParagraph.classList.add(
-    "font-regular",
-    "font-inter",
-    "text-regularSize"
-  );
-  secondParagraph.textContent = second;
-
-  const a = document.createElement("a");
-  a.className =
-    "flex justify-center items-center gap-2 rounded-xl px-4 bg-colorButton w-44 mt-5 cursor-pointer";
-  a.href = "#formulario";
-
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className =
-    "py-3 font-semibold font-inter text-basicSize text-white border-lg";
-  button.textContent = "Quiero Invertir";
-
-  const img = document.createElement("img");
-  img.src = "./images/img/trend-up-01.png";
-  img.alt = "flecha";
-  img.className = "w-6 h-6";
-
-  animation.appendChild(h2_weathHtml);
-  div_weath_info.appendChild(firstParagraph);
-  div_weath_info.appendChild(secondParagraph);
-  a.appendChild(button);
-  a.appendChild(img);
-  animation.appendChild(div_weath_info);
-  animation.appendChild(a);
-
-  services.appendChild(animation);
-
-  /* imagenes  */
-  const servicesAnimation = document.createElement("div");
-  servicesAnimation.className =
-    "animate-fade-up animate-once animate-duration-1000 flex justify-end z-0";
-  // 90 js - 600 html - 137 html
-  const div_empty = document.createElement("div");
-  div_empty.className = "md:basis-2/5";
-
-  const div_fill = document.createElement("div");
-  div_fill.className = "md:basis-3/5 md:ml-40 w-full";
-
-  const image = document.createElement("img");
-  image.src = pathImage;
-  image.alt = imageAlt;
-  image.className = "w-full";
-
-  servicesAnimation.appendChild(div_empty);
-  div_fill.appendChild(image);
-  servicesAnimation.appendChild(div_fill);
-  img_patrimonial.appendChild(servicesAnimation);
+  updateElementClasses(finanzas, addClasses, removeClasses);
+  deleteElementClasses(wealth, estructuracion);
 }
 
-const firstWeath =
-  "Yep Advisors, entendemos que cada individuo tiene objetivos financieros únicos. Nuestro servicio de Wealth Management ofrece soluciones personalizadas diseñadas para proteger y hacer tu patrimonio.";
+function showWealthManagement() {
+  console.log("wealth");
 
-const secondWeath =
-  "Desde la planificación de la jubilación hasta la gestión de inversiones, nuestro enfoque centrado en el cliente garantiza que tus necesidades estén siempre en el centro de nuestras decisiones. Confía en nosotros para ayudarte a alcanzar tus metas financieras con confianza y tranquilidad.";
+  services[0].classList.remove("hidden");
+  services[1].classList.add("hidden");
+  services[2].classList.add("hidden");
 
-const firstEstructuracion =
-  "Una estructura financiera sólida es la base de cualquier estrategia empresarial exitosa. En Yep Advisors, te ofrecemos soluciones estratégicas que te permiten optimizar tu estructura financiera para maximizar el rendimietno y minimizar los riesgos.";
+  imagesServicios[0].classList.remove("hidden");
+  imagesServicios[1].classList.add("hidden");
+  imagesServicios[2].classList.add("hidden");
 
-const secondEstructuracion =
-  "Desde la gestión de deudas hasta la planificación fiscal, nuestro enfoque personalizado te proporciona las herramientas necesarias para tomar decisiones informadas y ancanzar tus metas financieras a largo plazo con confianza.";
+  flechaEstructura.classList.add("hidden");
+  flechaWeath.classList.remove("hidden");
+  flechaFinanzas.classList.add("hidden");
 
-const firstFinanzas =
-  "En el mundo empresarial, el éxito depende en gran medida de la capacidad para tomar decisiones financieras estratégicas. Con Yep Advisors, tienes un socio confiable que te brinda el conocimiento y la experiencia necesarios para impulsar el crecimiento y la rentabilidad de tu empresa.";
-
-const secondFinanzas =
-  "Desde la evaluación de inversines hasta la reestructuración financiera, nuestro equipo de expertos está aquí para ayudarte a navegar por los desafíos financieros y alcanzar tus objetivos empresariales.";
-
-function loadWeath() {
-  cleanHTML(); // Limpia el contenido antes de agregar nuevos elementos
-
-  showInfoYep(
-    "Gestión Patrimonial Personalizada",
-    firstWeath,
-    secondWeath,
-    "./images/img/patrimonio_testimonial.png",
-    "patrimonio testimonial"
-  );
-
-  //const serviceWeath = document.querySelector(".service-weath");
-  if (!flechaWeath.classList.contains("hidden")) {
-    flechaWeath.classList.remove("hidden");
-    flechaWeath.classList.add("block");
-    flechaFinanzas.classList.add("hidden");
-    flechaEstructura.classList.add("hidden");
-  } else {
-    flechaWeath.classList.remove("hidden");
-    flechaWeath.classList.add("block");
-    flechaFinanzas.classList.add("hidden");
-    flechaEstructura.classList.add("hidden");
-
-    finanzas.classList.remove("text-colorSubtitleLittle");
-    wealthLink.classList.add("text-colorSubtitleLittle");
-    estructuracion.classList.remove("text-colorSubtitleLittle");
-
-    wealthLink.classList.remove("font-regular", "text-regularSize");
-    wealthLink.classList.add(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    estructuracion.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    finanzas.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    estructuracion.classList.add("font-regular", "text-regularSize");
-    finanzas.classList.add("font-regular", "text-regularSize");
-  }
+  updateElementClasses(wealth, addClasses, removeClasses);
+  deleteElementClasses(finanzas, estructuracion);
 }
 
-function loadFinanzas() {
-  cleanHTML();
+function showEstructuras() {
+  console.log("estructuras");
 
-  showInfoYep(
-    "Potenciando tu Empresa hacia el Éxitos",
-    firstFinanzas,
-    secondFinanzas,
-    "./images/img/finanzas_testimonial_imagen.png",
-    "finanzas"
-  );
+  services[0].classList.add("hidden");
+  services[1].classList.add("hidden");
+  services[2].classList.remove("hidden");
 
-  if (!flechaFinanzas.classList.contains("hidden")) {
-    flechaFinanzas.classList.remove("hidden");
-    flechaFinanzas.classList.add("block");
-    flechaWeath.classList.add("hidden");
-    flechaEstructura.classList.add("hidden");
-  } else {
-    flechaFinanzas.classList.remove("hidden");
-    flechaFinanzas.classList.add("block");
-    flechaWeath.classList.add("hidden");
-    flechaEstructura.classList.add("hidden");
+  imagesServicios[0].classList.add("hidden");
+  imagesServicios[1].classList.add("hidden");
+  imagesServicios[2].classList.remove("hidden");
 
-    finanzas.classList.remove("font-regular", "text-regularSize");
-    finanzas.classList.add(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
+  flechaEstructura.classList.remove("hidden");
+  flechaWeath.classList.add("hidden");
+  flechaFinanzas.classList.add("hidden");
 
-    wealthLink.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    estructuracion.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-    wealthLink.classList.add("font-regular", "text-regularSize");
-    estructuracion.classList.add("font-regular", "text-regularSize");
-  }
+  // Llamar a la función para actualizar las clases
+  updateElementClasses(estructuracion, addClasses, removeClasses);
+  deleteElementClasses(finanzas, wealth);
 }
 
-function loadEstructuracion() {
-  cleanHTML();
-
-  showInfoYep(
-    "Optimización Financiera Estratégica",
-    firstEstructuracion,
-    secondEstructuracion,
-    "./images/img/estructuracion_imagen.png",
-    "estructuracion"
-  );
-
-  if (!flechaEstructura.classList.contains("hidden")) {
-    flechaEstructura.classList.remove("hidden");
-    flechaEstructura.classList.add("block");
-    flechaWeath.classList.add("hidden");
-    flechaFinanzas.classList.add("hidden");
-  } else {
-    flechaEstructura.classList.remove("hidden");
-    flechaEstructura.classList.add("block");
-    flechaWeath.classList.add("hidden");
-    flechaFinanzas.classList.add("hidden");
-
-    estructuracion.classList.remove("font-regular", "text-regularSize");
-    estructuracion.classList.add(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    wealthLink.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-
-    finanzas.classList.remove(
-      "text-colorSubtitleLittle",
-      "font-semibold",
-      "text-littleTitle"
-    );
-    wealthLink.classList.add("font-regular", "text-regularSize");
-    finanzas.classList.add("font-regular", "text-regularSize");
-  }
+function updateElementClasses(element, addClasses, removeClasses) {
+  element.classList.remove(...removeClasses);
+  element.classList.add(...addClasses);
 }
 
-function cleanHTML() {
-  img_patrimonial.innerHTML = "";
-  services.innerHTML = "";
+function deleteElementClasses(elementFinanza, elementWealth) {
+  elementFinanza.classList.remove(...addClasses);
+  elementWealth.classList.remove(...addClasses);
+}
+
+function show() {
+  document.querySelector(".hamburger").classList.toggle("open");
+  document.querySelector(".navigation").classList.toggle("active");
 }
