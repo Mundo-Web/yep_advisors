@@ -84,50 +84,5 @@ button {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
-.banner_section {
-  background-image: url("../img_donas/fondomovil2.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.banner_section2 {
-  background-image: url("../img_donas/bannerfondo2.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.js-example-tags-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.tag-selected {
-  list-style: none;
-  background-color: #e4e4e4;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  cursor: default;
-  float: left;
-  margin-right: 5px;
-  margin-top: 5px;
-  padding: 0 5px;
-}
-
-.destroy-tag-selected {
-  color: #999;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 2px;
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.select2-selection__choice {
-  display: none;
-}

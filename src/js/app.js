@@ -3,11 +3,6 @@ const finanzas = document.getElementById("finanzas");
 const estructuracion = document.getElementById("estructuracion");
 const services = document.querySelectorAll(".services");
 const imagesServicios = document.querySelectorAll(".images-servicios");
-/*  */
-
-const flechaWeath = document.querySelector(".flecha-weath");
-const flechaFinanzas = document.querySelector(".flecha-finanzas");
-const flechaEstructura = document.querySelector(".flecha-estructura");
 
 // Clases a agregar y quitar
 const addClasses = [
@@ -23,11 +18,6 @@ const removeClasses = [
   "text-littleTitle",
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-  flechaFinanzas.classList.add("hidden");
-  flechaEstructura.classList.add("hidden");
-});
-
 loadEventListeners();
 
 function loadEventListeners() {
@@ -37,7 +27,6 @@ function loadEventListeners() {
 }
 
 function showFinanzas() {
-  console.log("finanzas");
 
   services[0].classList.add("hidden");
   services[1].classList.remove("hidden");
@@ -47,9 +36,6 @@ function showFinanzas() {
   imagesServicios[1].classList.remove("hidden");
   imagesServicios[2].classList.add("hidden");
 
-  flechaWeath.classList.add("hidden");
-  flechaFinanzas.classList.remove("hidden");
-  flechaEstructura.classList.add("hidden");
 
   updateElementClasses(finanzas, addClasses, removeClasses);
   deleteElementClasses(wealth, estructuracion);
@@ -66,9 +52,7 @@ function showWealthManagement() {
   imagesServicios[1].classList.add("hidden");
   imagesServicios[2].classList.add("hidden");
 
-  flechaEstructura.classList.add("hidden");
-  flechaWeath.classList.remove("hidden");
-  flechaFinanzas.classList.add("hidden");
+ 
 
   updateElementClasses(wealth, addClasses, removeClasses);
   deleteElementClasses(finanzas, estructuracion);
@@ -84,10 +68,6 @@ function showEstructuras() {
   imagesServicios[0].classList.add("hidden");
   imagesServicios[1].classList.add("hidden");
   imagesServicios[2].classList.remove("hidden");
-
-  flechaEstructura.classList.remove("hidden");
-  flechaWeath.classList.add("hidden");
-  flechaFinanzas.classList.add("hidden");
 
   // Llamar a la función para actualizar las clases
   updateElementClasses(estructuracion, addClasses, removeClasses);
