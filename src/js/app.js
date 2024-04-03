@@ -27,7 +27,6 @@ function loadEventListeners() {
 }
 
 function showFinanzas() {
-
   services[0].classList.add("hidden");
   services[1].classList.remove("hidden");
   services[2].classList.add("hidden");
@@ -35,7 +34,6 @@ function showFinanzas() {
   imagesServicios[0].classList.add("hidden");
   imagesServicios[1].classList.remove("hidden");
   imagesServicios[2].classList.add("hidden");
-
 
   updateElementClasses(finanzas, addClasses, removeClasses);
   deleteElementClasses(wealth, estructuracion);
@@ -51,8 +49,6 @@ function showWealthManagement() {
   imagesServicios[0].classList.remove("hidden");
   imagesServicios[1].classList.add("hidden");
   imagesServicios[2].classList.add("hidden");
-
- 
 
   updateElementClasses(wealth, addClasses, removeClasses);
   deleteElementClasses(finanzas, estructuracion);
