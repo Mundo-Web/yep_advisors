@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 30,
     grabCursor: true,
     centeredSlides: false,
+    loop: true,
     initialSlide: 0,
     autoplay: {
       delay: 1500,
