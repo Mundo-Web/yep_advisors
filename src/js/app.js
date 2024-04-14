@@ -24,6 +24,32 @@ document.addEventListener("DOMContentLoaded", function () {
   enlaces.forEach((enlace) => {
     enlace.addEventListener("click", handleClick);
   });
+
+  /* carrousel */
+
+  const swiper = new Swiper(".logos", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    grabCursor: true,
+    centeredSlides: false,
+    initialSlide: 0,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
 
 function show() {
